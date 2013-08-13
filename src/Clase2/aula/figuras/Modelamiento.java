@@ -7,14 +7,13 @@ public class Modelamiento {
     
     public static void main(String[] args) {
         
-        
-
+        Modelamiento.doAbstracto();
     }
     
     
     
     
-    public void static doAbstracto(){
+    public static void doAbstracto(){
         
         Cuadrado figura = new Cuadrado();
         figura.setAlto(10d);

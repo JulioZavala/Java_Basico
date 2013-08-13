@@ -2,19 +2,19 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Clase2.aula.Objetos;
+package Clase2.aula.zoologico;
 
 public class Tigre extends Animal {
 
     
     public Tigre (){
-        
+        this.setNumeroPatas(4);     
     }
             
     
     public Tigre (String especie){
+        this.setNumeroPatas(4); 
         this.setEspecie(especie);
-        this.setNumeroPatas(4);
         
     }
     
@@ -24,11 +24,11 @@ public class Tigre extends Animal {
     
     
     @Override
-    public void hacerRuido() {
+    void hacerRuido() {
         System.out.println("Solo Rugir");
     }
 
-    public void hacerRuido(boolean molestar) {
+    void hacerRuido(boolean molestar) {
 
         if (molestar) {
             System.out.println("Rugir y Zarpar");
@@ -36,14 +36,14 @@ public class Tigre extends Animal {
 
     }
 
-    public void hacerRuido(String mens) {
+    void hacerRuido(String mens) {
 
-                    System.out.println(mens);
+                    System.out.println("rugir " + mens);
         
     }
 
 
-    public void zarpar() {
+    void zarpar() {
 
                     System.out.println("Zarpar");
         

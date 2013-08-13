@@ -1,10 +1,11 @@
-package Clase2.aula.Objetos;
+package Clase2.aula.zoologico;
 
 public class Zoologico {
 
     public static void main(String[] args) {
 
-        Zoologico.doCasting(new Tigre());
+        Zoologico.doHerencia();
+        //Zoologico.doCasting(new Tigre());
 
 
     }
@@ -37,7 +38,7 @@ public class Zoologico {
         condorito.hacerRuido();
         System.out.println(condorito.getNumeroPatas());
         condorito.hacerRuido();
-        condorito.hacerRuido(!true);
+        condorito.hacerRuido(true);
         
     }
 

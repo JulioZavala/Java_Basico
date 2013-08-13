@@ -1,5 +1,5 @@
 
-package Clase2.aula.Objetos;
+package Clase2.aula.zoologico;
 
 
 public class Condor extends Animal {
@@ -23,7 +23,7 @@ public class Condor extends Animal {
     }
     
     
-    public void hacerRuido() {
+    void hacerRuido() {
 
      
             System.out.println("Cantar");
@@ -33,7 +33,7 @@ public class Condor extends Animal {
     
     
     
-    public void hacerRuido(boolean molestar) {
+    void hacerRuido(boolean molestar) {
 
         if (molestar) {
             System.out.println("Chillar");

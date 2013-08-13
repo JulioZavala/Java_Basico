@@ -1,5 +1,5 @@
 
-package Clase2.aula.Objetos;
+package Clase2.aula.zoologico;
 
 public class Animal {
     
@@ -40,7 +40,7 @@ public class Animal {
     
    
     
-    public void hacerRuido(){
+    void hacerRuido(){
  
         
         System.out.println("Zzzzzzz");
@@ -49,7 +49,7 @@ public class Animal {
     
     
     
-    public void printNombrePatas(){
+    void printNombrePatas(){
         System.out.println(this.especie+" "+this.numeroPatas);
         
     }
