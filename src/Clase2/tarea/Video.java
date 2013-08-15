@@ -1,12 +1,15 @@
-
 package Clase2.tarea;
 
-
 public class Video extends Media {
-    
+
     private String director;
     private String actores;
     private double duracion;
+
+    public Video() {
+        this.setDias(3);
+        this.setCosto(10);
+    }
 
     public String getDirector() {
         return director;
@@ -31,7 +34,4 @@ public class Video extends Media {
     public void setDuracion(double duracion) {
         this.duracion = duracion;
     }
-    
-    
-    
 }

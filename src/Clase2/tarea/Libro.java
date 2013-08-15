@@ -1,12 +1,15 @@
-
 package Clase2.tarea;
 
-
 public class Libro extends Media {
-    
+
     private String autor;
     private int paginas;
     private long isbn;
+
+    public Libro() {
+        this.setDias(15);
+        this.setCosto(5);
+    }
 
     public String getAutor() {
         return autor;
@@ -31,6 +34,4 @@ public class Libro extends Media {
     public void setIsbn(long isbn) {
         this.isbn = isbn;
     }
-    
-    
 }
