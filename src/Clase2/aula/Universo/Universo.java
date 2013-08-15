@@ -12,7 +12,7 @@ public class Universo {
         
         Alf et = new Alf();
         et.alimentarse();
-        et.comergato();
+        et.comerGato();
         
         
     }

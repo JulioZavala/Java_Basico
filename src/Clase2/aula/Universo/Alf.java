@@ -23,7 +23,7 @@ public class Alf implements SerVivo, Melmakiano {
     }
 
     @Override
-    public void comergato() {
+    public void comerGato() {
         System.out.println("COMER GATO");  
     }
  

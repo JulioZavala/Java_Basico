@@ -4,8 +4,8 @@ public class Zoologico {
 
     public static void main(String[] args) {
 
-        Zoologico.doHerencia();
-        //Zoologico.doCasting(new Tigre());
+        //Zoologico.doHerencia();
+        Zoologico.doCasting(new Tigre());
 
 
     }
