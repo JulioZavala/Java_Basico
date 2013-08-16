@@ -3,7 +3,7 @@ package Clase2.tarea;
 public class Mediateca {
 
     public static void main(String[] args) {
-        
+
         Libro libro1 = new Libro();
         Video video1 = new Video();
         Cinta_cd cd1 = new Cinta_cd();
@@ -32,24 +32,21 @@ public class Mediateca {
         cd2.setAutor("Alanis Morissette");
         cd2.setLugar("USA");
         cd2.setDuracion(1.5);
-        
-        
-        
-        
-    
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
         Socio persona1 = new Socio();
-        
-        persona1.prestarLibro("15/08/2013 14:35:00", cd2);
-        persona1.prestarLibro("16/08/2013 08:00:00", cd1);
-        persona1.prestarLibro("05/08/2013 12:45:00", libro1);
-        persona1.prestarLibro("07/08/2013 16:45:00", video1);
-        
+
+        persona1.prestarLibro("15/08/2013 14:35:00", 5, cd2);
+        persona1.prestarLibro("16/08/2013 08:00:00", 6, cd1);
+        persona1.prestarLibro("05/08/2013 12:45:00", 16, libro1);
+        persona1.prestarLibro("07/08/2013 16:45:00", 4, video1);
+
     }
-
-    
-
 }
