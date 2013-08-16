@@ -1,13 +1,12 @@
-
 package Clase2.tarea;
 
-
 public class Socio {
-    
+
     private String id;
     private String nombre;
     private String apellido;
     private String direccion;
+    private Prestamo[] prestamos;
 
     public String getId() {
         return id;
@@ -41,7 +40,21 @@ public class Socio {
         this.direccion = direccion;
     }
 
+    public Prestamo[] getPrestamos() {
+        return prestamos;
+    }
+
+    public void setPrestamos(Prestamo[] prestamos) {
+        this.prestamos = prestamos;
+    }
     
+    void prestarLibro (Media media) {
     
-    
+}
+    void calculaDeuda (){
+        
+    }
+
+
+
 }

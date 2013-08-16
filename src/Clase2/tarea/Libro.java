@@ -4,7 +4,7 @@ public class Libro extends Media {
 
     private String autor;
     private int paginas;
-    private long isbn;
+    private String isbn;
 
     public Libro() {
         this.setDias(15);
@@ -27,11 +27,11 @@ public class Libro extends Media {
         this.paginas = paginas;
     }
 
-    public long getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(long isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 }
