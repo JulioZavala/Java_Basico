@@ -41,7 +41,7 @@ public class Mediateca {
 
 
 
-   
+
 
 
         persona1.prestarLibro("15/08/2013 14:35:00", 10, cd2);
@@ -49,33 +49,30 @@ public class Mediateca {
         persona1.prestarLibro("05/08/2013 12:45:00", 1, libro1);
         persona1.prestarLibro("07/08/2013 16:45:00", 1, video1);
         System.out.println("===============================");
-        System.out.println("El costo total es :"+persona1.getDeuda()+" Soles");
+        System.out.println("El costo total es :" + persona1.getDeuda() + " Soles");
         System.out.println("===============================");
-        
+
         Mediateca.doImprimirPrestamos(persona1);
-    
+
     }
-    
-    
-    public static void doImprimirPrestamos(Socio socio){
-        Prestamo[] prestamos ;
-        
+
+    public static void doImprimirPrestamos(Socio socio) {
+        Prestamo[] prestamos;
+
         socio.imprimirSocio();
-        
-        if (socio.getCantidad() == 0){
+
+        if (socio.getCantidad() == 0) {
             System.out.println("NO HAY PRESTAMOS");
-        }else {
+        } else {
             prestamos = socio.getPrestamos();
-            for (int i=0;i<socio.getCantidad();i++){
+            for (int i = 0; i < socio.getCantidad(); i++) {
                 System.out.println("------------------------------");
-                System.out.println("PRESTAMO "+(i+1));
-                prestamos[i].imprimeDatosPrestamo(); 
+                System.out.println("PRESTAMO " + (i + 1));
+                prestamos[i].imprimeDatosPrestamo();
             }
-            
+
         }
 
-    
+
     }
-            
-    
 }

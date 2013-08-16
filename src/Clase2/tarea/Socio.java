@@ -50,10 +50,6 @@ public class Socio {
         return cantidad;
     }
 
-     
-    
-    
-
     void prestarLibro(String fecha, int dia, Media media) {
 
         Prestamo prestamo = new Prestamo();
@@ -85,25 +81,20 @@ public class Socio {
     }
 
     public double getDeuda() {
-        for (int i = 0; i < this.cantidad ; i++) {
+        for (int i = 0; i < this.cantidad; i++) {
 
             deuda = deuda + prestamos[i].getCostoPrestamo();
         }
 
-        return deuda ;
-}
-    
-void imprimirSocio (){
-        
-        System.out.println("Codigo : "+this.id);
-        System.out.println("Nombre : "+this.nombre+" "+this.apellido);
-        System.out.println("Direccion : "+this.direccion);
-        
-        
+        return deuda;
     }
-    
-    
-       
-    
 
+    void imprimirSocio() {
+
+        System.out.println("Codigo : " + this.id);
+        System.out.println("Nombre : " + this.nombre + " " + this.apellido);
+        System.out.println("Direccion : " + this.direccion);
+
+
+    }
 }

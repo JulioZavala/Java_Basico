@@ -1,10 +1,8 @@
-
 package Clase2.tarea;
 
-
 public abstract class Media {
-    
-    private String id ;
+
+    private String id;
     private String titulo;
     private int dias;
     private int costo;
@@ -40,8 +38,4 @@ public abstract class Media {
     public void setCosto(int costo) {
         this.costo = costo;
     }
-    
-    
-        
-    
 }
