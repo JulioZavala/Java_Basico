@@ -6,7 +6,7 @@ public class Socio {
     private String nombre;
     private String apellido;
     private String direccion;
-    private Prestamo[] prestamos;
+    private Prestamo[] prestamos = new Prestamo[3];
 
     public String getId() {
         return id;
@@ -40,17 +40,33 @@ public class Socio {
         this.direccion = direccion;
     }
 
-    public Prestamo[] getPrestamos() {
-        return prestamos;
-    }
 
-    public void setPrestamos(Prestamo[] prestamos) {
-        this.prestamos = prestamos;
+    
+    
+    
+    void prestarLibro (String fecha, Media media) {
+    
+     Prestamo prestamo = new Prestamo ();
+     
+     prestamo.setSocioId(this.id);
+     prestamo.setFecha(fecha);
+     prestamo.setMedia(media);
+     
+     if (prestamos[0] == null) {
+        prestamos[0] = prestamo;
+    }else if (prestamos[1] == null){
+        prestamos[1] = prestamo;
+    }else if (prestamos[2] == null){
+        prestamos[2] = prestamo;
+    }else {
+         System.out.println("Ya prestó 03 medios");
     }
-    
-    void prestarLibro (Media media) {
-    
+     
+     
 }
+    
+    
+    
     void calculaDeuda (){
         
     }
