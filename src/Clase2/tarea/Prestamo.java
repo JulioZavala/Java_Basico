@@ -55,18 +55,21 @@ public class Prestamo {
 
         if (media instanceof Libro) {
             Libro libro1 = (Libro) media;
+            System.out.println("ID : "+libro1.getId());
             System.out.println("Titulo : " + libro1.getTitulo());
             System.out.println("Autor : " + libro1.getAutor());
             System.out.println("Paginas : " + libro1.getPaginas());
             System.out.println("ISBN : " + libro1.getIsbn());
         } else if (media instanceof Video) {
             Video video1 = (Video) media;
+            System.out.println("ID : "+video1.getId());
             System.out.println("Titulo : " + video1.getTitulo());
             System.out.println("Director : " + video1.getDirector());
             System.out.println("Actores : " + video1.getActores());
             System.out.println("Duracion : " + video1.getDuracion());
         } else if (media instanceof Cinta_cd) {
             Cinta_cd cinta1 = (Cinta_cd) media;
+            System.out.println("ID : "+cinta1.getId());
             System.out.println("Titulo : " + cinta1.getTitulo());
             System.out.println("Autor : " + cinta1.getAutor());
             System.out.println("Lugar : " + cinta1.getLugar());

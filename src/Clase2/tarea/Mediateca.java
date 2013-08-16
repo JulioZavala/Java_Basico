@@ -8,6 +8,7 @@ public class Mediateca {
         Video video1 = new Video();
         Cinta_cd cd1 = new Cinta_cd();
         Cinta_cd cd2 = new Cinta_cd();
+        Socio persona1 = new Socio();
 
         libro1.setId("00001");
         libro1.setTitulo("El Delfin");
@@ -33,20 +34,48 @@ public class Mediateca {
         cd2.setLugar("USA");
         cd2.setDuracion(1.5);
 
+        persona1.setId("AB0023");
+        persona1.setNombre("Juan");
+        persona1.setApellido("Perez");
+        persona1.setDireccion("Av. Peru 300");
 
 
 
+   
 
 
-
-
-
-        Socio persona1 = new Socio();
-
-        persona1.prestarLibro("15/08/2013 14:35:00", 5, cd2);
-        persona1.prestarLibro("16/08/2013 08:00:00", 6, cd1);
-        persona1.prestarLibro("05/08/2013 12:45:00", 16, libro1);
-        persona1.prestarLibro("07/08/2013 16:45:00", 4, video1);
-
+        persona1.prestarLibro("15/08/2013 14:35:00", 10, cd2);
+        persona1.prestarLibro("16/08/2013 08:00:00", 1, cd1);
+        persona1.prestarLibro("05/08/2013 12:45:00", 1, libro1);
+        persona1.prestarLibro("07/08/2013 16:45:00", 1, video1);
+        System.out.println("===============================");
+        System.out.println("El costo total es :"+persona1.getDeuda()+" Soles");
+        System.out.println("===============================");
+        
+        Mediateca.doImprimirPrestamos(persona1);
+    
     }
+    
+    
+    public static void doImprimirPrestamos(Socio socio){
+        Prestamo[] prestamos ;
+        
+        socio.imprimirSocio();
+        
+        if (socio.getCantidad() == 0){
+            System.out.println("NO HAY PRESTAMOS");
+        }else {
+            prestamos = socio.getPrestamos();
+            for (int i=0;i<socio.getCantidad();i++){
+                System.out.println("------------------------------");
+                System.out.println("PRESTAMO "+(i+1));
+                prestamos[i].imprimeDatosPrestamo(); 
+            }
+            
+        }
+
+    
+    }
+            
+    
 }
