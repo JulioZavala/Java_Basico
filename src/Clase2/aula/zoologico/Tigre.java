@@ -50,4 +50,16 @@ public class Tigre extends Animal {
     }
 
 
+    
+    @Override
+    public boolean equals(Object obj) {
+
+        if (obj instanceof Tigre) {
+            return ((Tigre) obj).getEspecie().equals(this.getEspecie());
+        }
+        return false;
+    }
+    
+    
+    
 }
