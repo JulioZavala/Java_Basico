@@ -82,7 +82,7 @@ public static void doEjempoExcepcion(){
 
 
 
-public static void doejemplo3(){
+public static void doEjemplo3(){
     
     int[] n=null; //= {11,22,33,44,55,66,77,88,99};
         
