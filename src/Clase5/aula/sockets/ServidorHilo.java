@@ -14,7 +14,7 @@ import java.net.Socket;
  *
  * @author PFR
  */
-public class ServidorHilo {
+public class ServidorHilo extends Thread{
 
     private Socket cliente;
 

@@ -17,7 +17,7 @@ public class Cliente {
 
     
     public static void main(String[] args) {
-        Cliente socketCliente = new Cliente("192.168.19.254", 9999);
+        Cliente socketCliente = new Cliente("LocalHost", 9999);
         socketCliente.doConectar();
     }
     

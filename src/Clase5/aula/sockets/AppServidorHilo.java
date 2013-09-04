@@ -1,16 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Clase5.aula.sockets;
 
 import java.net.ServerSocket;
 import java.net.Socket;
 
-/**
- *
- * @author PFR
- */
+
 public class AppServidorHilo {
 
     private int port;
