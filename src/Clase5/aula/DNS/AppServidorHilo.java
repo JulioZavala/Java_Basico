@@ -1,5 +1,6 @@
-package Clase5.aula.sockets;
+package Clase5.aula.DNS;
 
+import Clase5.aula.sockets.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
