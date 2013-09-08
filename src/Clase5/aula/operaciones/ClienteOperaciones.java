@@ -34,8 +34,8 @@ public class ClienteOperaciones {
             System.out.println(msg);
 
             // COMUNICACION 2
-            out.println("Multiplicación");
-            out.println("150.5");
+            out.println("División");
+            out.println("5");
             out.println("20");
 
             
