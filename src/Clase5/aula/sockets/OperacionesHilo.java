@@ -14,11 +14,11 @@ import java.net.Socket;
  *
  * @author PFR
  */
-public class ServidorHilo extends Thread{
+public class OperacionesHilo extends Thread{
 
     private Socket cliente;
 
-    public ServidorHilo(Socket cliente) {
+    public OperacionesHilo(Socket cliente) {
         this.cliente = cliente;
     }
 

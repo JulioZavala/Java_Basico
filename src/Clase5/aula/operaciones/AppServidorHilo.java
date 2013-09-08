@@ -1,4 +1,4 @@
-package Clase5.aula.sockets;
+package Clase5.aula.operaciones;
 
 import java.net.ServerSocket;
 import java.net.Socket;
